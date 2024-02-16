@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#container{
+    background-color: aliceblue;
+    display: inline-block;
+    justify-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 40px;
+}
+#container h1{
+    text-align: center;
+}
+.amount-sec{
+    margin: 20px;
+}
+label,input{
+    height: 20px;
+}
+.form,.from,.to{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 20px 0px 20px 0px;
+}
+select{
+    font-size: 12px;
+    padding: 2px;
+}
+.from img,.to img{
+    height: 25px;
+    width: 25px;
+}
+.msg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    height: 2rem;
+    width: 20rem;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.submit:hover{
+    background-color: rgb(214, 212, 212);
+}
