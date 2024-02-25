@@ -1,29 +1,38 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-style:oblique;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url(cc1.jpg);
+    background-size:auto;
 }
 #container{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: inline-block;
-    justify-items: center;
-    border: 1px solid lightgrey;
+    /* border: 1px solid lightgrey; */
     border-radius: 10px;
     padding: 40px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
 }
 #container h1{
     text-align: center;
+    font-size: 32px;
 }
 .amount-sec{
     margin: 20px;
 }
 label,input{
     height: 20px;
+}
+.form1{
+    width: 320px;
+    align-items: center;
 }
 .form,.from,.to{
     display: flex;
@@ -32,16 +41,20 @@ label,input{
     gap:10px;
     margin: 20px 0px 20px 0px;
 }
+.country{
+    display: flex;
+    gap: 10px
+}
 select{
     font-size: 12px;
-    padding: 2px;
+
 }
 .from img,.to img{
     height: 25px;
     width: 25px;
 }
 .msg{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -50,8 +63,118 @@ select{
     width: 20rem;
     margin: 10px 0px 10px 0px;
     border-radius: 10px;
+    font-weight: bolder;
     border: 1px solid lightgray;
 }
 .submit:hover{
     background-color: rgb(214, 212, 212);
+}
+/* for big screen */
+
+
+@media(min-width :600px){ 
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    #container{
+        width : 1100px;
+        /* background-color: aliceblue; */
+        display: inline-block;
+        /* border: 1px solid lightgrey; */
+        border-radius: 10px;
+        padding: 40px;
+        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+    #container h1{
+        font-size: 40px;
+        text-align: center;
+        
+    }
+    .form1{
+        width: 1100px;
+        display:flex;
+        margin: 0px 20px 0px 20px;
+    }
+    .amount-sec{
+        width:240px;
+        margin: 20px;  
+    }
+    label{
+        font-size: 30px;
+    }
+    input{
+        font-size: 20px;
+        height: 30px;
+        margin: 10px 0px 10px 0px;
+    }
+    .form{
+        width: auto;
+        font-size: 30px;
+        gap: 25px;
+        margin: 0px 40px 0px 40px;
+    }
+    .from,.to{
+        font-size: 30px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        gap:25px;
+        margin: 10px;
+    }
+    .from,.to{
+        width: 300px;
+    }
+    select{
+        font-size: 15px;
+        text-align: center;
+        width: 247px;
+        height: 34px;
+    }
+    .country{
+        display: flex;
+        margin: 0px 10px 0px 10px;
+        gap: 10px
+    }
+    .from img,.to img{
+        height: 35px;
+        width: 35px;
+    }
+    .convert{
+        display: flex;
+    }
+    .msg{
+        width: 700px;
+        display: block;
+        padding-left: 40px;
+    }
+    .msg1{
+        font-size: 20px;
+    }
+    .msg2{
+        font-size: 30px;
+    }
+    .submit{
+        height: 2.5rem;
+        width: 18rem;
+        margin: 10px 0px 10px 0px;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        font-weight:bolder;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+    }
+    .submit:hover{
+        background-color: rgb(70, 155, 246);
+        color: white;
+    }
 }
