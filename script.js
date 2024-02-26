@@ -5,7 +5,8 @@ const dropdowns = document.querySelectorAll("select");
 const btn = document.querySelector("button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
-const msg = document.querySelector(".msg");
+const msg1 = document.querySelector(".msg1");
+const msg2 = document.querySelector(".msg2");
 
 for (let select of dropdowns) {
   for (currCode in countryList) {
@@ -38,7 +39,8 @@ const updateExchangeRate = async () => {
   let rate = data[toCurr.value.toLowerCase()];
 
   let finalAmount = amtVal * rate;
-  msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  msg1.innerText = `${amtVal} ${fromCurr.value} =`;
+  msg2.innerText = `${finalAmount} ${toCurr.value}`;
 };
 
 const updateFlag = (element) => {
